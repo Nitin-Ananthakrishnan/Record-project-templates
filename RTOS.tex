@@ -1,19 +1,53 @@
-\documentclass[a4 paper,13pt]{extarticle}
+\documentclass[a4paper,11pt]{extarticle}
 \usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in]{geometry}
+\pagenumbering{arabic}
+\usepackage{fancyhdr}
+\newcommand{\pg}[1]{\setcounter{page}{#1}}
 \newcommand{\head}[2]{
 \begin{center}
-\Large \textbf{#1}\\ 
+\Large \textbf{#1}\\
 \vspace{5pt}
 \normalsize{Experiment #2}\\
 \end{center}
 \vspace{10pt}
 }
 \newcommand{\aim}[2]{
+\textbf{\large Name (Roll No): }Nitin Ananthakrishnan (CB.EN.P2EBS25021)\\
+\vspace{5pt}
+\\
 \textbf{\large Date: }#1\\
-\vspace{5pt}\\
+\vspace{5pt}
+\\
 \textbf{\large Aim: }The aim of the experiment is to #2\\
 }
+\newcommand{\software}[1]{
+\vspace{5pt}\\
+\textbf{\large Software required: }#1\\
+}
+\newcommand{\program}[1]{
+\vspace{5pt}\\
+\textbf{\large Program: }#1\\
+}
+\newcommand{\op}[1]{
+\vspace{5pt}\\
+\textbf{\large Output: }#1\\
+}
+\newcommand{\infer}[1]{
+\vspace{5pt}\\
+\textbf{\large Inference: }#1\\
+}
+
+\newcommand{\result}[1]{
+\vspace{5pt}\\
+\textbf{\large Result: }#1\\
+}
 \begin{document}
+\pg{10}
 \head{Design and Implementation of Inter-Process Communication using process}{1}
-\aim{1}{hi}
+\aim{10-12-2025}{hi}
+\software{Hi}
+\program{Hi}
+\op{hi}
+\infer{hi}
+\result{Hi}
 \end{document}

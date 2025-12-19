@@ -1,5 +1,3 @@
-\documentclass[a4paper,11pt]{extarticle}
-\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in]{geometry}
 \pagenumbering{arabic}
 \usepackage{fancyhdr}
 \newcommand{\pg}[1]{\setcounter{page}{#1}}
@@ -13,41 +11,50 @@
 }
 \newcommand{\aim}[2]{
 \textbf{\large Name (Roll No): }Nitin Ananthakrishnan (CB.EN.P2EBS25021)\\
-\vspace{5pt}
-\\
 \textbf{\large Date: }#1\\
 \vspace{5pt}
 \\
-\textbf{\large Aim: }The aim of the experiment is to #2\\
+\textbf{\large Aim: \\}The aim of this experiment is to #2\\
 }
 \newcommand{\software}[1]{
 \vspace{5pt}\\
-\textbf{\large Software required: }#1\\
+\textbf{\large Software required: \\}#1\\
 }
 \newcommand{\program}[1]{
 \vspace{5pt}\\
-\textbf{\large Program: }#1\\
-}
-\newcommand{\op}[1]{
-\vspace{5pt}\\
-\textbf{\large Output: }#1\\
+\textbf{\large Program: }\\
+\lstinputlisting[language=c]{#1}
 }
 \newcommand{\infer}[1]{
-\vspace{5pt}\\
-\textbf{\large Inference: }#1\\
+\vspace{5pt}
+
+\hspace{-17pt}\textbf{\large Inference: \\}#1\\
 }
 
 \newcommand{\result}[1]{
 \vspace{5pt}\\
-\textbf{\large Result: }#1\\
+\textbf{\large Result: \\}#1\\
 }
-\begin{document}
-\pg{10}
-\head{Design and Implementation of Inter-Process Communication using process}{1}
-\aim{10-12-2025}{hi}
-\software{Hi}
-\program{Hi}
-\op{hi}
-\infer{hi}
-\result{Hi}
-\end{document}
+\usepackage{listings}
+\usepackage{accsupp}
+\usepackage{color,soul}
+\usepackage{xcolor}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.96}
+\definecolor{grey}{rgb}{0.5,0.5,0.5}
+\lstdefinestyle{mystyle}{
+backgroundcolor=\color{white},
+commentstyle=\color{grey},
+numbers=left,
+numberstyle=\tiny\color{black},
+basicstyle=\sffamily\footnotesize,
+numbersep=5pt,
+showspaces=false,
+captionpos=b,
+xleftmargin=10pt,
+showtabs=false,
+showstringspaces=false,tabsize=2,
+firstnumber=1,
+keepspaces=true, frame=none, breaklines=true, columns=flexible,
+}
+\lstset{style=mystyle}
+\renewcommand\lstlistingname{Source code}
